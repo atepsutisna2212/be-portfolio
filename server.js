@@ -5,7 +5,7 @@ const skillController = require('./controllers/skillController');
 const portfolioController = require('./controllers/portfolioController');
 const educationController = require('./controllers/educationController');
 const app = express();
-const port = 4000;
+const port = 5000;
 
 // Set view engine EJS
 app.set('view engine', 'ejs');
