@@ -1,5 +1,6 @@
 const express = require('express');
 const path = require('path');
+const cors = require("cors");
 const skillController = require('./controllers/skillController');
 const portfolioController = require('./controllers/portfolioController');
 const educationController = require('./controllers/educationController');
@@ -9,6 +10,7 @@ const app = express();
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'views'));
 // Middleware untuk file statis (CSS, JS, gambar)
+app.use(cors())
 app.use(express.static('public'));
 
 // // Routing
